@@ -1,0 +1,208 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  /* padding-top: 2rem; */
+  color: #111;
+  font-family: 'Lato', sans-serif;
+  background: url('../images/watercolour.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+a {
+	color: #111;
+}
+
+.handwriting {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.bgWhite {
+	background: #fff;
+}
+
+.noUnderline, .noUnderline:hover {
+	text-decoration: none;
+}
+
+hr.stephLikesSpacer {
+	margin: 50px auto;
+	border-top: 1px solid #000;
+	width: 50%;
+}
+
+/* navbar */
+.topInfo {
+	margin: 30px 10px;
+}
+.topInfo h1 {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+.topInfo h2 {
+	font-size: 20px;
+}
+
+nav.navbar li.active a {
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+	nav.navbar li.active a {
+		text-decoration: none;
+		position: relative;
+	}
+
+	nav.navbar li.active a:after {
+		content: "";
+	  position: absolute;
+	  bottom: 2px;
+	  left: 0.8rem;
+	  width: calc(100% - 1.6rem);
+	  border-bottom: 1px solid #111;
+	}
+}
+
+nav.navbar {
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
+	min-height: 58px;
+}
+
+@media screen and (min-width: 768px) {
+	.navbar-toggleable-sm .navbar-nav .nav-link {
+		padding-left: 0.8rem;
+		padding-right: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	nav.navbar {
+		padding-top: 13px;
+	}
+}
+
+/* footer */
+footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+
+/* main content */
+.belowNav {
+	margin-top: 60px;
+}
+
+.smallGap {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.mediumGap {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.bottomBorder {
+	border-bottom: 1px solid #111;
+}
+
+.leftBorder {
+	border-left: 1px solid #111;
+}
+
+.hashtagFont {
+	font-size: 25px;
+}
+
+.topBorder {
+	border-top: 1px solid #111;
+}
+
+.titleText {
+	font-size: 40px;
+}
+
+.foxBearHeader {
+	width: 25%;
+	display: inline;
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+
+/* countdown */
+#clockdiv{
+	display: inline-block;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 0 10px 10px 10px;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	font-size: 26px;
+	display: inline-block;
+}
+
+.smalltext{
+	font-size: 14px;
+}
+
+.bigDay {
+	margin-top: 10px;
+}
+
+/* pics banner */
+.img-landscape, .img-portrait {
+	height: 200px
+}
+
+@media screen and (max-width: 537px) {
+	.img-portrait, .img-landscape {
+		display: block;
+		height: auto;
+		width: 250px;
+		margin: 0 auto;
+	}
+
+}
+
+/* weddingPartyBio */
+#weddingPartyBio p {
+	margin-top: 11px;
+}
+
+.coupleText {
+	margin-top: 20px;
+	margin-bottom: 90px;
+	font-size: 21px;
+}
+
+
+/* RSVP */
+.rsvpContact {
+	background: transparent;
+	width: 57%;
+	text-align: center;
+	border-bottom: 1px solid #111;
+	margin: 0 auto;
+}
+
+.transparentRSVP, .transparentRSVP:focus {
+	background: transparent;
+	border: none !important;
+	border-radius: 0;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+.rsvpLines {
+	display: inline-block;
+	width: auto;
+	vertical-align: top;
+}
+
+
+
