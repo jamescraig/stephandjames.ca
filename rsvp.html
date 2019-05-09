@@ -74,6 +74,7 @@
               <div class="smallGap">
               </div>
               <form name="rsvp" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
                   <p class="rsvpLines">I,</p>
                   <input name="guestname" class="rsvpLines transparentRSVP form-control handwriting" placeholder="your name" type="text" style="border-bottom: 1px solid #111 !important;">
@@ -118,10 +119,10 @@
                 <div class="text-center align-self-center">
                   <h2 class="handwriting titleText" style="font-size: 23px;">Your Contact Details</h2>
                   <div class="rsvpContact">
-                    <input name="email" class="transparentRSVP form-control" placeholder="myemail@example.com" type="text">
+                    <input name="email" class="transparentRSVP form-control" placeholder="myemail@example.com" type="email">
                   </div>
                   <div class="rsvpContact">
-                    <input name="phone" class="transparentRSVP form-control" placeholder="(555) 555-1234" type="text">
+                    <input name="phone" class="transparentRSVP form-control" placeholder="(555) 555-1234" type="tel">
                   </div>
                   <div class="rsvpContact">
                     <input name="address" class="transparentRSVP form-control" placeholder="123 Streety McStreet Ave" type="text">
