@@ -73,55 +73,66 @@
             <h2 class="handwriting titleText">RSVP</h2>
               <div class="smallGap">
               </div>
-              <div>
-                <p class="rsvpLines">I,</p>
-                <input class="rsvpLines transparentRSVP form-control handwriting" placeholder="your name" type="text" style="border-bottom: 1px solid #111 !important;">
-                <select class="handwriting form-control rsvpLines">
-                  <option value="am attending" selected>am attending</option>
-                  <option value="am not attending">am not attending</option>
-                </select>
-                <p class="rsvpLines rsvpLines">the festivities</p>
-              </div>
-              <div>
-                <p class="rsvpLines">My invitation mentioned I could bring</p>
-                <select class="handwriting form-control rsvpLines">
-                  <option value="my awesome self" selected>my awesome self</option>
-                  <option value="a date">a date</option>
-                </select>
-              </div>
-              <div>
-                <p class="rsvpLines">I will be attending</p>
-                <select class="handwriting form-control rsvpLines">
-                  <option value="0 events" selected>both events</option>
-                  <option value="the ceremony">the ceremony</option>
-                  <option value="the party">the party</option>
-                </select>
-              </div>
-              <div>
-                <p class="rsvpLines">After the party I'll be heading to</p>
-                <input class="rsvpLines transparentRSVP form-control handwriting" placeholder="where are you staying" type="text" style="border-bottom: 1px solid #111 !important;">
-              </div>
-              <div class="mediumGap">  
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="text-center align-self-center">
-            <h2 class="handwriting titleText" style="font-size: 23px;">Your Contact Details</h2>
-            <div class="rsvpContact">
-              <input class="transparentRSVP form-control" placeholder="myemail@example.com" type="text">
-            </div>
-            <div class="rsvpContact">
-              <input class="transparentRSVP form-control" placeholder="(555) 555-1234" type="text">
-            </div>
-            <div class="rsvpContact">
-              <input class="transparentRSVP form-control" placeholder="123 Streety McStreet Ave" type="text">
-            </div>
-            <div class="rsvpContact">
-              <input class="transparentRSVP form-control" placeholder="Fakesville, ON A1B 2C3" type="text">
-            </div>
+              <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                <div>
+                  <p class="rsvpLines">I,</p>
+                  <input name="guestname" class="rsvpLines transparentRSVP form-control handwriting" placeholder="your name" type="text" style="border-bottom: 1px solid #111 !important;">
+                  <select name="attendance" class="handwriting form-control rsvpLines">
+                    <option value="am attending" selected>am attending</option>
+                    <option value="am not attending">am not attending</option>
+                  </select>
+                </div>
+                <div>
+                  <p class="rsvpLines">I am also bringing</p>
+                  <input name="guests" class="rsvpLines transparentRSVP form-control handwriting" placeholder="name" type="text" style="border-bottom: 1px solid #111 !important;">
+                </div>
+                <div>
+                  <p class="rsvpLines">My dietary needs are: </p>
+                  <input name="diet" class="rsvpLines transparentRSVP form-control handwriting" placeholder="vegetarian, etc..." type="text" style="border-bottom: 1px solid #111 !important;">         
+                </div>
+                <div>
+                  <p class="rsvpLines">After the party I'll be heading to</p>
+                  <select name="accomodations" class="handwriting form-control rsvpLines">
+                    <option value="Nowhere! I am camping at the farm" selected>Nowhere! I am camping at the farm</option>
+                    <option value="Home">Home</option>
+                    <option value="A local Hotel/Air Bnb">A local Hotel/Air Bnb</option>
+                  </select>          
+                </div>
+                <div>
+                  <p class="rsvpLines">I need a tent</p>
+                  <select name="needsatent" class="handwriting form-control rsvpLines">
+                    <option value="Yes" selected>Yes</option>
+                    <option value="No">No</option>
+                  </select>          
+                </div>
+                <div>
+                  <p class="rsvpLines">I have extra tents to lend</p>
+                  <select name="extratent" class="handwriting form-control rsvpLines">
+                    <option value="Yes" selected>Yes</option>
+                    <option value="No">No</option>
+                  </select>     
+                  <input name="howmanyextra" class="rsvpLines transparentRSVP form-control handwriting" placeholder="How Many" type="text" style="border-bottom: 1px solid #111 !important;">     
+                </div>
+                <div class="smallGap">  
+                </div>
+                <div class="text-center align-self-center">
+                  <h2 class="handwriting titleText" style="font-size: 23px;">Your Contact Details</h2>
+                  <div class="rsvpContact">
+                    <input name="email" class="transparentRSVP form-control" placeholder="myemail@example.com" type="text">
+                  </div>
+                  <div class="rsvpContact">
+                    <input name="phone" class="transparentRSVP form-control" placeholder="(555) 555-1234" type="text">
+                  </div>
+                  <div class="rsvpContact">
+                    <input name="address" class="transparentRSVP form-control" placeholder="123 Streety McStreet Ave" type="text">
+                  </div>
+                  <div class="rsvpContact">
+                    <input name="city" class="transparentRSVP form-control" placeholder="Fakesville, ON A1B 2C3" type="text">
+                  </div>
+                </div>
+                <p>&nbsp;</p>
+                <button class="btn btn-primary" type="submit">RSVP!</button>
+              </form>
           </div>
         </div>
       </div>
